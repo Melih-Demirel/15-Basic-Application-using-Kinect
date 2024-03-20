@@ -1,0 +1,15 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.SkeletonBasics.CalibrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Calibration Window" Height="500" Width="500">
+    <Grid x:Name="grid">
+        <Ellipse x:Name="cornerTopLeft" Fill="Red" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Ellipse x:Name="cornerTopRight" Fill="Red" Width="40" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Ellipse x:Name="cornerBottomRight" Fill="Red" Width="40" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Ellipse x:Name="cornerBottomLeft" Fill="Red" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="windowMessage" Text="stand on green corner and wave to calibrate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Visibility="Visible"/>
+        <!--<Button x:Name="button" Content="Add calibPoint" Click="PrintPoints_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Height="44" Width="178" Visibility="Hidden"/>-->
+        <Rectangle x:Name="rectangleBorder" Stroke="Red" StrokeThickness="2" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
